@@ -3,6 +3,9 @@ import string
 # Importar random para los cosos randomxd
 import random
 
+# Importar mis funcioncitas
+from funcs import menu
+
 
 # Para generar las acás
 def passÑÑa(lenght, samples):
@@ -32,14 +35,7 @@ def passÑÑa(lenght, samples):
 if __name__ == '__main__':
 
     # Presentaciónxd
-    print("Oal, bienvenido a Posseñña")
-    print(f"\n\n Sigue las instrucción para generar una contraseña \n")
-
-    # A tomar en cuenta
-    print(f"¿Cuántos caracteres tiene que tener tu contraseña? ")
-    lenght = int(input()) # Largo
-    print(f"¿Cuántos ejemplos te gustaría recibir? ")
-    samples = int(input()) # Número de candidatos a contraseña a generar
+    lenght, samples = menu.menu()
 
     contras = passÑÑa(lenght, samples)
     print("Contraseñas generadas:")
