@@ -4,7 +4,6 @@ from . import inputver as inv
 
 # Función para presentar el programisha
 def menu():
-    print(f"Hola, te doy la bienvenida a Possegna/Posseñña \n\n")
 
     print(f"Sigue las instrucciones para generar tu nueva contraseña \n")
     print(f"Si quieres salir, puedes introducir -1 (menos uno) en cualquier momento \n")
