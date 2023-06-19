@@ -14,8 +14,8 @@ def genos(lenght, samples):
     for i in range(samples):
         temp = ""
         # Iterar por el número de caracteres de longitud
-        for char in range(lenght):
-            temp += chars[rnd.choice(chars)]
+        for _ in range(lenght):
+            temp += rnd.choice(chars)
         # Añadir la posible constraseña recién generada a la lista que regresaremos
         contras.append(temp)
     
